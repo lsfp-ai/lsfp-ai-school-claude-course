@@ -35,6 +35,16 @@
   .hero .wrap{position:relative;z-index:1;padding:80px 20px 88px;text-align:center}
   .eyebrow{display:inline-block;font-size:.82rem;letter-spacing:.15em;font-weight:700;
     color:#cdd6ff;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 16px;margin-bottom:26px}
+  .fa-badge{position:absolute;top:16px;left:14px;z-index:3;
+    display:inline-flex;align-items:center;gap:5px;
+    padding:8px 15px;border-radius:12px;white-space:nowrap;
+    background:linear-gradient(135deg,#ff9124,#ff5f2e);color:#fff;
+    font-size:.9rem;font-weight:900;letter-spacing:.02em;
+    box-shadow:0 8px 20px rgba(255,110,40,.42);
+    transform:rotate(-6deg);transform-origin:center;
+    animation:pyoko 1.3s ease-in-out infinite}
+  @keyframes pyoko{0%,100%{transform:rotate(-6deg) translateY(0)}50%{transform:rotate(-6deg) translateY(-7px)}}
+  @media (prefers-reduced-motion:reduce){.fa-badge{animation:none}}
   .hero h1{font-size:clamp(1.9rem,5.2vw,3.1rem);font-weight:900;line-height:1.35;letter-spacing:.01em}
   .hero h1 b{color:var(--violet2)}
   .hero .sub{margin:22px auto 0;max-width:640px;font-size:clamp(1rem,2.4vw,1.2rem);color:#dfe4fb}
@@ -130,6 +140,7 @@
 <!-- HERO -->
 <header class="hero">
   <div class="wrap">
+    <div class="fa-badge">🎯 金融アドバイザーの皆様へ</div>
     <span class="eyebrow">LSFP AIスクール ｜ 全2回オンライン講座</span>
     <h1>Claude Codeって、<br><b>結局なに？</b>を終わらせる。</h1>
     <p class="sub">「便利そう。でも、よく分からない」——<br>その霧を晴らす、金融アドバイザーのためのClaude Code入門講座です。</p>
